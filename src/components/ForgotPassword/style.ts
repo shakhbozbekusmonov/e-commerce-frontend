@@ -1,4 +1,6 @@
-import leftBg from '@/assets/images/login-img.jpg'
+import arrowLetf from '@/assets/images/arrow-left.svg'
+import leftBg from '@/assets/images/forgot-password-img.jpg'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const WrapperStart = styled.div`
@@ -8,6 +10,7 @@ const WrapperStart = styled.div`
 	background-image: url(${leftBg});
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center bottom;
 `
 
 const WrapperEnd = styled.div`
@@ -48,4 +51,23 @@ const Button = styled.button`
 	}
 `
 
-export { Button, Text, Title, Wrapper, WrapperEnd, WrapperStart }
+const BackLink = styled(Link)`
+	display: inline-flex;
+	margin-bottom: 30px;
+	color: #131118;
+
+	&::before {
+		content: '';
+		width: 24px;
+		height: 24px;
+		background-image: url(${arrowLetf});
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
+	&:hover {
+		color: #131118;
+	}
+`
+
+export { BackLink, Button, Text, Title, Wrapper, WrapperEnd, WrapperStart }
