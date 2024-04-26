@@ -82,15 +82,6 @@ const LoginForm: React.FC = () => (
 				Login
 			</Button>
 		</Form.Item>
-
-		<Form.Item>
-			<Flex justify='center' gap='5px'>
-				Don't have an account?
-				<Link to='/register' style={{ whiteSpace: 'nowrap', color: '#000' }}>
-					Register
-				</Link>
-			</Flex>
-		</Form.Item>
 	</Form>
 )
 

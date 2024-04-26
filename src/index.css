@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+/* FONTS */
+
+>>>>>>> 4dfff8be5ad1064d3704f08fc89337f4ad0f87c9
 /* ROOT */
 :root {
 	/* colors */
@@ -37,8 +42,11 @@ body {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
+<<<<<<< HEAD
 	font-family: 'Jost', sans-serif;
 	font-weight: 400;
+=======
+>>>>>>> 4dfff8be5ad1064d3704f08fc89337f4ad0f87c9
 }
 
 main {
