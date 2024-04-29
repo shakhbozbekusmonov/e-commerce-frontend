@@ -1,7 +1,7 @@
 import { Flex, Tabs } from 'antd'
-import { Container, WrapperStart } from './style'
-import ProductDetailBox from './ProductDetailBox'
 import { Link } from 'react-router-dom'
+import ProductDetailBox from './ProductDetailBox'
+import { Container, WrapperStart } from './style'
 
 const ProductDetail = () => {
 	return (
@@ -9,15 +9,14 @@ const ProductDetail = () => {
 			<Link to={`/home`}> smth / asdasd / asdasd /</Link>
 			<Flex style={{ height: '100vh' }}>
 				<WrapperStart>
-					<img src={''} alt="" />
-					image
+					<img src='https://picsum.photos/600' alt='' />
 				</WrapperStart>
 				<WrapperStart>
 					<ProductDetailBox />
 				</WrapperStart>
 			</Flex>
 			<Tabs
-				defaultActiveKey="1"
+				defaultActiveKey='1'
 				items={[
 					{
 						label: 'Tab 1',

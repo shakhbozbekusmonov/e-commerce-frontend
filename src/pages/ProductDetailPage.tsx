@@ -1,7 +1,7 @@
-import ProductDetail from "@/components/ProductDetail"
+import ProductDetail from '@/components/ProductDetail'
 
 const ProductDetailPage = () => {
-    return <ProductDetail />
+	return <ProductDetail />
 }
 
 export default ProductDetailPage
