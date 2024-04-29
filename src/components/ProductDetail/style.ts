@@ -67,7 +67,7 @@ const RadioTitle = styled.span<{ color?: string }>`
     border-radius: 0.5rem;
     background-color: ${props => props.color ? props.color : "#fff"};
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    transition: 0.15s ease;
+    transition: 0.09s ease;
     cursor: pointer;
     position: relative;
 	font-weight: 800;
@@ -83,10 +83,9 @@ const RadioInput = styled.input`
     white-space: nowrap;
     width: 1px;
 	&:checked+${RadioTitle} {
-    border: 3px solid #000;
+    border: 2px solid #000;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     color: #000;
-	transform: scale(1.2);
 }
 `
 const RadioInputs = styled.div`
@@ -98,6 +97,8 @@ const RadioInputs = styled.div`
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+	box-sizing: border-box;
+	padding: 5px;
 	&>*{
 		margin: 6px;
 	}
@@ -115,7 +116,14 @@ const Container = styled.div`
 	padding: 0 15px;
 	margin-inline: auto;
 `
+const Color = styled.div<{ color?: string }>`
+	width: 40px;
+	height: 40px;
+	border-radius: 0.25rem;
+
+	background-color: ${props => props.color};
+`
 
 
 
-export { InlineElements, ProductName, Wrapper, WrapperStart, Availability, ActualPrice, Button, ButtonMain, RadioTitle, RadioInput, RadioInputs, ProductCategory, StarAmount, Heading4, Container }
+export { InlineElements, ProductName, Wrapper, WrapperStart, Availability, ActualPrice, Button, ButtonMain, RadioTitle, RadioInput, RadioInputs, ProductCategory, StarAmount, Heading4, Container, Color }

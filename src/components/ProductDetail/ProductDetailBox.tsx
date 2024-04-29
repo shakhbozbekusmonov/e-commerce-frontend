@@ -1,5 +1,5 @@
 import { Form, Rate } from 'antd';
-import { ActualPrice, Availability, Button, ButtonMain, Heading4, InlineElements, ProductCategory, ProductName, RadioInput, RadioInputs, RadioTitle, StarAmount, Wrapper } from "./style";
+import { ActualPrice, Availability, Button, ButtonMain, Color, Heading4, InlineElements, ProductCategory, ProductName, RadioInput, RadioInputs, RadioTitle, StarAmount, Wrapper } from "./style";
 import { useState } from 'react';
 
 const ProductDetailBox = () => {
@@ -27,15 +27,21 @@ const ProductDetailBox = () => {
 					<RadioInputs>
 						<label>
 							<RadioInput type='radio' name='color' />
-							<RadioTitle color='red' />
+							<RadioTitle >
+								<Color color='red' />
+							</RadioTitle>
 						</label>
 						<label>
 							<RadioInput type='radio' name='color' />
-							<RadioTitle color='blue' />
+							<RadioTitle>
+								<Color color='blue' />
+							</RadioTitle>
 						</label>
 						<label>
 							<RadioInput type='radio' name='color' />
-							<RadioTitle color='green' />
+							<RadioTitle>
+								<Color color='green' />
+							</RadioTitle>
 						</label>
 					</RadioInputs>
 
