@@ -1,5 +1,11 @@
+import Shop from "./pages/shop/Shop"
+
 const App = () => {
-	return <></>
+	return(
+		<>
+			<Shop/>
+		</>
+	)
 }
 
 export default App

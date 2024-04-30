@@ -1,6 +1,6 @@
 import React from 'react';
 import type { MenuProps, CheckboxProps } from 'antd';
-import { Flex, Menu, Checkbox, Typography, Slider } from 'antd';
+import {  Menu, Checkbox, Typography } from 'antd';
 import { FilterByBlack, FilterByBlue, FilterByGreen, FilterByOrange, FilterByRed, FilterByYellow } from './FilterByColor';
 import { FilterByL, FilterByM, FilterByS, FilterByXL, FilterByXXL, FilterByXXXL } from './FilterBySize';
 
@@ -11,14 +11,7 @@ const onChange: CheckboxProps['onChange'] = (e) => {
     console.log(`checked = ${e.target.checked}`);
   };
 
-const Filter = () => {
-    return(
-        <Flex vertical>
-            <Title style={{textAlign:"left"}} level={5}>Price $0-$2000</Title>
-            <Slider style={{width: '95%'}} max={2000} min={0} defaultValue={0} tooltip={{ open: false }} />
-        </Flex>
-    )
-}
+
 
 
 
@@ -39,15 +32,6 @@ const items: MenuItem[] = [
       { key: '7', label: <Checkbox style={{width: '100%', height: '100%', fontWeight: "600"}} onChange={onChange}>Watches</Checkbox> },
       { key: '8', label: <Checkbox style={{width: '100%', height: '100%', fontWeight: "600"}} onChange={onChange}>Accessories</Checkbox> },
       { key: '9', label: <Checkbox style={{width: '100%', height: '100%', fontWeight: "600"}} onChange={onChange}>Winter Wear</Checkbox> },
-
-    ],
-  },
-  {
-    key: 'sub3',
-    label: <Title style={{textAlign:"left"}} level={3}>Filter by Price</Title>,
-    children: [
-      { key: '10', label: <Filter/> },
-      
 
     ],
   },
