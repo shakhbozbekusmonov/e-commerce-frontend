@@ -14,7 +14,7 @@ const handleChange = (value: string) => {
 
 const contentStyle: React.CSSProperties = {
 	height: '100vh',
-	paddingTop: '130px',
+	paddingTop: '100px',
 	color: '#000',
 	backgroundColor: '#fff',
 	paddingLeft: '30px',
@@ -34,19 +34,7 @@ const Shop: React.FC = () => (
 		<Layout>
 			<Layout>
 				<Sider width='25%' style={siderStyle}>
-					<Flex
-						align='center'
-						justify='left'
-						style={{ marginBottom: '40px', marginLeft: '30px' }}
-					>
-						Shop{' '}
-						<img
-							style={{ width: '20px', height: '20px' }}
-							src='/src/assets/icons/rightIcon.png'
-							alt=''
-						/>{' '}
-						All Products
-					</Flex>
+					<Title level={5} style={{textAlign:"left", marginLeft:"30px"}}>Shop/All Products	</Title>
 					<MenuItem />
 				</Sider>
 				<Content style={contentStyle}>
@@ -76,7 +64,7 @@ const Shop: React.FC = () => (
 								style={{ width: 120 }}
 								onChange={handleChange}
 							>
-								<Select.Option value='jack'>Jack</Select.Option>
+								<Select.Option optionBgColor="#fff" value='jack'>Jack</Select.Option>
 								<Select.Option value='lucy'>Lucy</Select.Option>
 								<Select.Option value='Yiminghe'>yiminghe</Select.Option>
 							</Select>
